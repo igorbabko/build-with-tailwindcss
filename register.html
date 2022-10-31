@@ -7,28 +7,28 @@
     <link href="output.css" rel="stylesheet" />
     <title>Security</title>
   </head>
-  <body class="min-h-screen bg-no-repeat bg-bottom bg-fixed bg-[url('/wave.svg')]">
-    <div class="flex justify-between py-6 px-6 space-x-10">
+  <body class="min-h-screen bg-[url('/wave.svg')] bg-fixed bg-bottom bg-no-repeat">
+    <div class="flex justify-between space-x-10 py-6 px-6">
       <a href="register.html" class="flex items-center gap-2">
         <svg class="h-10 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 00-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08zm3.094 8.016a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
         </svg>
         <span class="text-xl font-black">Security</span>
       </a>
-      <a href="login.html" class="flex justify-center items-center rounded-md bg-green-600 py-2 px-4 text-sm font-medium text-white shadow-lg hover:shadow-xl focus:shadow-xl hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition duration-150 ease-in-out">Sign In</a>
+      <a href="login.html" class="flex items-center justify-center rounded-md bg-green-600 py-2 px-4 text-sm font-medium text-white shadow-lg transition duration-150 ease-in-out hover:bg-green-700 hover:shadow-xl focus:shadow-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">Sign In</a>
     </div>
 
-    <div class="flex flex-col justify-center pt-6 pb-12 px-6">
+    <div class="flex flex-col justify-center px-6 pt-6 pb-12">
       <div class="sm:mx-auto sm:w-full sm:max-w-md">
         <svg class="mx-auto h-12 w-auto text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
 
-        <h2 class="mt-2 sm:mt-6 text-center text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">Create your account</h2>
+        <h2 class="mt-2 text-center text-2xl font-bold tracking-tight text-gray-900 sm:mt-6 sm:text-3xl">Create your account</h2>
       </div>
 
-      <div class="mt-6 sm:mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div class="bg-white/90 backdrop-blur-xl py-8 px-4 shadow-xl rounded-xl sm:px-10">
+      <div class="mt-6 sm:mx-auto sm:mt-8 sm:w-full sm:max-w-md">
+        <div class="rounded-xl bg-white/90 py-8 px-4 shadow-xl backdrop-blur-xl sm:px-10">
           <form class="space-y-6" action="#" method="POST">
             <div>
               <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
@@ -50,9 +50,9 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                   </svg>
                 </div>
-                <input type="email" name="email" id="email" class="block w-full rounded-md pl-10 sm:text-sm border-red-300 pr-10 text-red-900 placeholder-red-300 focus:border-red-500 focus:outline-none focus:ring-red-500" placeholder="john@example.com" />
+                <input type="email" name="email" id="email" class="block w-full rounded-md border-red-300 pl-10 pr-10 text-red-900 placeholder-red-300 focus:border-red-500 focus:outline-none focus:ring-red-500 sm:text-sm" placeholder="john@example.com" />
                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
-                  <svg class="h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                  <svg class="h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
                     <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
                   </svg>
                 </div>
@@ -85,11 +85,11 @@
             </div>
 
             <div class="[&>*]:w-full">
-              <a href="verify-email.html" class="flex justify-center items-center rounded-md bg-green-600 py-2 px-4 text-sm font-medium text-white shadow-lg hover:shadow-xl focus:shadow-xl hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition duration-150 ease-in-out">Sign Up</a>
+              <a href="verify-email.html" class="flex items-center justify-center rounded-md bg-green-600 py-2 px-4 text-sm font-medium text-white shadow-lg transition duration-150 ease-in-out hover:bg-green-700 hover:shadow-xl focus:shadow-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">Sign Up</a>
             </div>
           </form>
 
-          <div class="flex justify-center items-center mt-6 text-sm">
+          <div class="mt-6 flex items-center justify-center text-sm">
             <a href="login.html" class="font-medium text-green-600 hover:text-green-500">Already have an account?</a>
           </div>
         </div>
